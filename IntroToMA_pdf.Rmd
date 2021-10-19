@@ -4,13 +4,11 @@ date: '2021-10-26'
 title: Introduction to Meta-Analysis with R
 subtitle: KITE-Trainees Workshop Series
 output: 
-  bookdown::pdf_document2:
-    fig_width: 7.0
+  pdf_document:
     number_sections: true
-    fig_height: 5.0
+    toc: true
     toc_depth: 2.0
     fig_caption: true
-    toc: true
 fontsize: 11pt
 linkcolor: blue
 citecolor: blue
@@ -21,9 +19,6 @@ csl: apa.csl
 link-citations: true
 ---
 
-```{r, include=FALSE}
-options(tinytex.verbose = TRUE)
-```
 
 ```{r setup, include=FALSE}
 library(knitr)
