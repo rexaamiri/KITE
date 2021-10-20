@@ -5,6 +5,7 @@ title: Introduction to Meta-Analysis with R
 subtitle: KITE-Trainees Workshop Series
 output: 
   pdf_document:
+    latex_engine: xelatex
     number_sections: true
     toc: true
     toc_depth: 2.0
@@ -19,7 +20,6 @@ csl: apa.csl
 link-citations: true
 ---
 
-
 ```{r setup, include=FALSE}
 library(knitr)
 library(flextable)
@@ -27,7 +27,7 @@ library(flextable)
 # Global options
 options(max.print="75")
 opts_chunk$set(echo=FALSE,
-               cache=TRUE,
+               cache=FALSE,
                prompt=FALSE,
                tidy=TRUE,
                tidy.opts=list(width.cutoff=60),
@@ -35,7 +35,6 @@ opts_chunk$set(echo=FALSE,
                message=FALSE,
                warning=FALSE)
 opts_knit$set(width=75)
-knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Making Everything Ready
